@@ -6,6 +6,8 @@ public class LogginLab {
 
     private Integer threshold = 0;
 
+    private Integer test = 0;
+
     public LogginLab() {
         this.threshold = 0;
     }
