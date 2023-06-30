@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 public class LogginLabTest {
     private final static Logger logger = Logger.getLogger(LogginLab.class.getName());
 
+
     @org.junit.Before
     public void setUp() throws Exception {
     }
@@ -13,6 +14,24 @@ public class LogginLabTest {
     @org.junit.After
     public void tearDown() throws Exception {
     }
+
+
+    @org.junit.Test
+    public void thresholdReached() {
+        Integer limit=7;
+        
+
+        LogginLab lab = new LogginLab();
+
+
+
+        assertFalse(lab.thresholdReached(limit));
+
+
+    }
+
+
+
 
     @org.junit.Test
     public void thresholdExceeds() {
